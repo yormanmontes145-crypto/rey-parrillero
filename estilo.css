@@ -1,0 +1,840 @@
+/* =====================================================
+   REY PARRILLERO
+   Hoja de estilos - CSS3
+   ===================================================== */
+
+
+/* =========================
+   VARIABLES DE COLORES
+   ========================= */
+
+:root {
+    --color-principal: #170d08;
+    --color-secundario: #2b170e;
+    --color-dorado: #d4a017;
+    --color-dorado-claro: #e8c35a;
+    --color-blanco: #ffffff;
+    --color-texto: #dddddd;
+    --color-gris: #aaaaaa;
+    --color-fondo: #0f0805;
+    --color-tarjeta: #24140d;
+}
+
+
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Evita que los enlaces aparezcan azules */
+
+a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
+.encabezado {
+    background-color: var(--color-principal);
+    border-bottom: 2px solid var(--color-dorado);
+
+    min-height: 80px;
+    padding: 15px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    color: var(--color-dorado);
+    font-size: 32px;
+}
+
+.logo h1 {
+    color: var(--color-blanco);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* Menú */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.menu a {
+    color: var(--color-blanco);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: var(--color-dorado);
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.hero-texto {
+    width: 50%;
+}
+
+
+.subtitulo {
+    color: var(--color-dorado);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+
+.hero-texto h2 {
+    color: var(--color-blanco);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 58px;
+    margin-bottom: 5px;
+}
+
+
+.hero-texto h3 {
+    color: var(--color-dorado-claro);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.hero-texto p {
+    color: var(--color-texto);
+    margin-bottom: 25px;
+}
+
+
+.hero-imagen {
+    width: 50%;
+}
+
+
+.hero-imagen img {
+    width: 100%;
+    max-width: 550px;
+    height: 430px;
+    object-fit: cover;
+
+    border: 2px solid var(--color-dorado);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px #000000;
+}
+
+
+/* =========================
+   BOTONES
+   ========================= */
+
+.boton {
+    display: inline-block;
+
+    background-color: var(--color-dorado);
+    color: #1a0f08;
+
+    padding: 12px 25px;
+
+    border: 2px solid var(--color-dorado);
+    border-radius: 5px;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.boton:hover {
+    background-color: var(--color-dorado-claro);
+    color: #1a0f08;
+}
+
+
+.boton-secundario {
+    display: inline-block;
+
+    background-color: transparent;
+    color: var(--color-dorado);
+
+    padding: 8px 18px;
+
+    border: 1px solid var(--color-dorado);
+    border-radius: 4px;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.boton-secundario:hover {
+    background-color: var(--color-dorado);
+    color: #1a0f08;
+}
+
+
+/* =========================
+   SECCIONES
+   ========================= */
+
+section {
+    padding: 80px 5%;
+}
+
+
+.titulo-seccion {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+
+.titulo-seccion h2 {
+    color: var(--color-blanco);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+
+.titulo-seccion p {
+    color: var(--color-texto);
+}
+
+
+/* =========================
+   NOSOTROS
+   ========================= */
+
+.nosotros {
+    background-color: var(--color-secundario);
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.nosotros-imagen {
+    width: 45%;
+}
+
+
+.nosotros-imagen img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+
+    border: 2px solid var(--color-dorado);
+    border-radius: 8px;
+
+    box-shadow: 0 8px 20px #000000;
+}
+
+
+.nosotros-texto {
+    width: 45%;
+}
+
+
+.nosotros-texto h2 {
+    color: var(--color-blanco);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.nosotros-texto p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PRODUCTOS
+   ========================= */
+
+.productos {
+    background-color: var(--color-fondo);
+}
+
+
+.contenedor-productos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Tarjetas */
+
+.tarjeta {
+    background-color: var(--color-tarjeta);
+
+    width: 31%;
+    min-width: 280px;
+
+    border: 1px solid #53301d;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 15px #000000;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tarjeta:hover {
+    border-color: var(--color-dorado);
+}
+
+
+.tarjeta img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+
+.tarjeta-contenido {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    height: 100%;
+}
+
+
+.tarjeta-contenido h3 {
+    color: var(--color-blanco);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+}
+
+
+.tarjeta-contenido p {
+    color: var(--color-texto);
+    font-size: 15px;
+}
+
+
+.tarjeta-contenido strong {
+    color: var(--color-dorado-claro);
+    font-size: 20px;
+}
+
+
+/* =========================
+   SERVICIOS
+   ========================= */
+
+.servicios {
+    background-color: var(--color-secundario);
+}
+
+
+.contenedor-servicios {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+.servicio {
+    background-color: var(--color-tarjeta);
+
+    width: 30%;
+    min-width: 260px;
+
+    padding: 30px 25px;
+
+    border: 1px solid #53301d;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+.servicio:hover {
+    border-color: var(--color-dorado);
+}
+
+
+.icono {
+    color: var(--color-dorado);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+.servicio h3 {
+    color: var(--color-blanco);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+
+.servicio p {
+    color: var(--color-texto);
+}
+
+
+/* =========================
+   TABLA
+   ========================= */
+
+.tabla-seccion {
+    background-color: var(--color-fondo);
+}
+
+
+.tabla-contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    background-color: var(--color-tarjeta);
+}
+
+
+th {
+    background-color: var(--color-dorado);
+    color: #1a0f08;
+
+    padding: 14px;
+
+    border: 1px solid #6e4d0e;
+
+    text-align: center;
+}
+
+
+td {
+    color: var(--color-texto);
+
+    padding: 13px;
+
+    border: 1px solid #53301d;
+
+    text-align: center;
+}
+
+
+tr:hover {
+    background-color: #321b10;
+}
+
+
+/* =========================
+   GALERÍA
+   ========================= */
+
+.galeria {
+    background-color: var(--color-secundario);
+}
+
+
+.contenedor-galeria {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.contenedor-galeria img {
+    width: 30%;
+    min-width: 280px;
+    height: 230px;
+
+    object-fit: cover;
+
+    border: 2px solid #53301d;
+    border-radius: 7px;
+}
+
+
+.contenedor-galeria img:hover {
+    border-color: var(--color-dorado);
+}
+
+
+/* =========================
+   CONTACTO
+   ========================= */
+
+.contacto {
+    background-color: var(--color-fondo);
+}
+
+
+.formulario {
+    width: 90%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    background-color: var(--color-tarjeta);
+
+    padding: 35px;
+
+    border: 1px solid #53301d;
+    border-radius: 8px;
+
+    box-shadow: 0 8px 20px #000000;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+.campo label {
+    color: var(--color-dorado-claro);
+    font-weight: bold;
+}
+
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #140b07;
+    color: var(--color-blanco);
+
+    border: 1px solid #604027;
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--color-dorado);
+    outline: none;
+}
+
+
+.campo textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+.formulario .boton {
+    width: 180px;
+    align-self: center;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    background-color: #090503;
+
+    border-top: 2px solid var(--color-dorado);
+
+    padding: 45px 6% 20px;
+}
+
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.footer-contenido > div {
+    min-width: 220px;
+}
+
+
+.footer h2 {
+    color: var(--color-blanco);
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 8px;
+}
+
+
+.footer p {
+    color: var(--color-texto);
+    margin-bottom: 5px;
+}
+
+
+.copyright {
+    border-top: 1px solid #392217;
+
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+
+.copyright p {
+    color: var(--color-gris);
+    font-size: 14px;
+}
+
+
+/* =========================
+   DISEÑO RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .encabezado {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+
+    .menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 35px;
+    }
+
+
+    .hero-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .hero-texto h2 {
+        font-size: 42px;
+    }
+
+
+    .hero-texto h3 {
+        font-size: 24px;
+    }
+
+
+    .hero-imagen {
+        width: 100%;
+    }
+
+
+    .hero-imagen img {
+        height: auto;
+        max-width: 100%;
+    }
+
+
+    /* NOSOTROS */
+
+    .nosotros {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    .nosotros-imagen {
+        width: 100%;
+    }
+
+
+    .nosotros-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .nosotros-imagen img {
+        height: auto;
+    }
+
+
+    /* PRODUCTOS */
+
+    .contenedor-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .tarjeta {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* SERVICIOS */
+
+    .contenedor-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .servicio {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* GALERÍA */
+
+    .contenedor-galeria {
+        flex-direction: column;
+    }
+
+
+    .contenedor-galeria img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+
+    /* TABLA */
+
+    .tabla-contenedor {
+        width: 100%;
+    }
+
+
+    /* FORMULARIO */
+
+    .formulario {
+        width: 100%;
+        padding: 25px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+}
